@@ -11,8 +11,10 @@
   },
   "dependencies": {
     "bootstrap": "^4.4.1",
+    "bricks.js": "^1.8.0",
     "jquery": "^3.4.1",
-    "popper.js": "^1.16.0"
+    "popper.js": "^1.16.0",
+    "zoomwall.js": "^1.1.0"
   },
   "devDependencies": {
     "clean-webpack-plugin": "^3.0.0",
