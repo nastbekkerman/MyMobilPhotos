@@ -1,0 +1,99 @@
+<% var data = {
+title: "Центральная Россия",
+background: "./img/Obrabotkafons.jpg"
+
+}; %>
+<%= _.template(require('./../includes/header.html').default)(data) %>
+<p id="FIRST"></p>
+<section class="pageContent" >
+    <div class="wrap">
+        <div class="textBlockFE">
+
+            <h1 class="FEh1">Обработка</h1>
+
+        </div>
+        <section class="benefits">
+            <div class="benefits_wrap">
+
+                <div id="icon_wrap">
+                     <h2 class="FEh3">Приложения которые я использую для обработки</h2>
+                    <div class="icon">
+                        <p><a href="#benefit_Lightroom"><img src="img/icons/lightroom.png" width="120" height="120" ></a></p>
+                        <p>Lightroom</p>
+                    </div>
+                    <div class="icon">
+                        <p><a href="#benefit_VSCO"><img src="img/icons/vsco.png" width="120" height="120"></a></p>
+                        <p>VSCO</p>
+                    </div>
+                    <div class="icon">
+                        <p><a href="#benefit_Picsart"><img src="img/icons/picsart.png" width="120" height="120"></a></p>
+                        <p>PicsArt</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+    <div class="wrap">
+
+        <section id="benefit_Lightroom" class="benefitBlock">
+
+            <img src="img/iphon1_cr.png" class="benefitImage">
+
+            <div class="benefitText">
+                <h3 class="benefitTitle" > Lightroom </h3>
+                <p>
+                    Lightroom- мощный и интуитивно понятный бесплатный фоторедактор.
+                    В Lightroom очень много классных возможностей. Я испульзую его обычно на первом этапе обработки фотографий (если в фотографии не требуется ретушь).
+                    Самой главной фишкой являтся- подробная настрока светотени и цвета.
+                </p>
+
+            </div>
+            <p class="benefit_arrow_up"><a href="#FIRST"><img src="img/UP.png"></a></p>
+            <p class="benefit_arrow"><a href="#benefit_VSCO"><img src="img/Down.png"></a></p>
+
+        </section>
+
+    </div>
+    <div class="wrap">
+
+        <section id="benefit_VSCO" class="benefitBlock">
+
+            <img src="img/iphonV.png" class="benefitImageV">
+
+            <div class="benefitTextV">
+                <h3 class="benefitTitleV" > VSCO</h3>
+                <p>
+                    VSCO- унверсальный фоторедактор с множеством уже готовых фильтров (в том числе и бесплатных).
+                    VSCO отлично подходит для "быстрой" обработки фотографии, с возможностью простой обработки различных параметров (яркость, резкость, насыщенност и т.д.).
+                    Это приложение я чащ всего использую на втором этапе обработки фотографии: добавляю готовыее фильтры и корректирую некоторые параметры, которые не достаточно были скорректированы в Lightroom.
+                </p>
+                <p class="benefit_arrow_up2"><a href="#benefit_Lightroom"><img src="img/UP.png"></a></p>
+                <p class="benefit_arrow2"><a href="#benefit_Picsart"><img src="img/Down.png"></a></p>
+            </div>
+        </section>
+
+    </div>
+    <div class="wrap">
+
+        <section id="benefit_Picsart" class="benefitBlock">
+
+            <img src="img/GroupP.png" class="benefitImage">
+
+            <div class="benefitText">
+                <h3 class="benefitTitle" > PicsArt </h3>
+                <p>
+                    PicsArt пожалуй самый мнонгофункциональный фоторедактор из представленных выше. В нем можно не только ретушировать фотографии, но и рисовать, добавлять различные интересные эффекты, рамки, наклейки и т.п..
+                    Его я использую на первых этапах редактирования фотографии, ретуширую не идеальные моменты, удаляю лишние детали.
+                    А на конечном этапе редактирования добавляю рамку, чтобы выставить фотографию в историю в интсаграме.
+                </p>
+
+            </div>
+            <p class="benefit_arrow_up3"><a href="#benefit_VSCO"><img src="img/UP.png"></a></p>
+        </section>
+
+    </div>
+
+</section>
+
+<%= _.template(require('./../includes/footer.html').default)(data) %>

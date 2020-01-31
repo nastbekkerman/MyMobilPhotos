@@ -1,0 +1,52 @@
+<% var data = {
+  title: "главная страница",
+  background: "./img/intro-bg.jpg"
+}; %>
+<%= _.template(require('./../includes/header.html').default)(data) %>
+
+<section class="pageContent" >
+  <div class="wrap">
+  <div class="textBlock">
+    <h1>Мои мобильные фотографии</h1>
+    <p>
+      Здесь представлены мои фотографии, сделанные на мобильном телефоне. На этом сайте вы также можете ознакомиться не только с моими работами, но и увидеть, где они были сделаны, посмотреть, как я обрабатываю свои фотографии, и немного вдохновиться на создание собственного шедевра.
+    </p>
+  </div>
+  <section class="benefits">
+    <div class="benefits_wrap">
+      <h2 class="benefits_title">
+        Места
+      </h2>
+      <div class="benefit_galary">
+        <p class="fareast">
+          <a href="fareast.html" >
+            <img src="./img/fareast.jpg" alt="" class="fareast" width="343.55"
+                 height="312" alt="Дальний Восток">
+          </a>
+        </p>
+        <p class="center">
+          <a href="centr.html" >
+            <img src="./img/Center.jpg" alt="" class="fareast" width="736"
+                 height="312" alt="Дальний Восток">
+          </a>
+        </p>
+        <p class="europ">
+          <a href="#" >
+            <img src="./img/Europe.jpg" alt="" class="fareast" width="736"
+                 height="312" alt="Дальний Восток">
+          </a>
+        </p>
+        <p class="asia">
+          <a href="#" >
+            <img src="./img/asia.jpg" alt="" class="fareast" width="343.55"
+                 height="312" alt="Дальний Восток">
+          </a>
+        </p>
+      </div>
+
+    </div>
+  </section>
+  </div>
+</section>
+
+<%= _.template(require('./../includes/footer.html').default)(data) %>
